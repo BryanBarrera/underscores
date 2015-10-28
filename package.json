@@ -1,0 +1,25 @@
+{
+  "name": "breezy-project",
+  "version": "1.0.0",
+  "description": "a underscores wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Barrera",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-livereload": "^0.5.3",
+    "grunt": "^0.4.5", 
+    "grunt-connect": "^0.2.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-copy": "^0.1.0",
+    "grunt-html-build": "^0.5.2",
+    "grunt-sass": "^1.1.0",
+    "grunt-scss-lint": "^0.3.8",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}
