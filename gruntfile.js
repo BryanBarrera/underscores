@@ -21,23 +21,23 @@ module.exports = function(grunt) {
           livereload: true,
         },
         scripts: {
-          files: ['wp-content/themes/breezyy/js/*.js'],
+          files: ['js/*.js'],
           tasks: ['jshint', 'uglify'],
         },
         sass: {
-          files: ['wp-content/themes/breezyy/sass/style.scss'],
+          files: ['sass/style.scss', 'sass/**/*.scss '],
           tasks: ['sass:dev']
         },
         // html: {
-        //   files: ['wp-content/themes/breezyy/*.php'],
+        //   files: ['*.php'],
         //   tasks: ['htmlbuild:dev']  // Works with htmlbuild:dist
         //   },
         images: {
-          files: ['wp-content/themes/breezyy/assets/*.{png,jpg,jpeg,gif,svg}'],
+          files: ['assets/*.{png,jpg,jpeg,gif,svg}'],
           tasks: ['imagemin']
         },
         livereload: {
-          files: ['*.html', '*.php', 'wp-content/themes/breezyy/assets/images/*.{png,jpg,jpeg,gif,svg}']
+          files: ['*.html', '*.php', 'assets/images/*.{png,jpg,jpeg,gif,svg}']
         }
       },
       // jsHint File
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
       sass: {
         dev:{
           files:{
-            'wp-content/themes/breezyy/style.css':'wp-content/themes/breezyy/sass/style.scss'
+            'style.css':'sass/style.scss'
           }
         },
         options: {
@@ -117,9 +117,9 @@ module.exports = function(grunt) {
             dist: {
               files: [{
                 expand: true,
-                cwd:  'wp-content/themes/breezyy/assets/',
+                cwd:  'assets/',
                 src: ['**/*.{png,jpg,gif,svg}'],
-                dest: 'wp-content/themes/breezyy/images/'
+                dest: 'images/'
               }]
             },
             options: {
